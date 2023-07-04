@@ -123,5 +123,36 @@
       }
     }
   }
+}
 
+.application-section {
+  margin-bottom: 2rem;
+
+  .application-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .application-screenshots {
+    display: flex;
+    overflow-x: scroll;
+
+    .screenshot {
+      flex: 0 0 auto;
+      margin-right: 1rem;
+      height: 200px; // adjust as necessary
+      width: auto; // keeps image aspect ratio
+    }
+  }
+}
+
+@include respond(phone) {
+  .application-section {
+    .application-screenshots {
+      .screenshot {
+        height: 100px; // adjust as necessary for mobile view
+      }
+    }
+  }
 }
