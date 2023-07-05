@@ -494,7 +494,7 @@ textarea {
           margin: 0; } }
 
 .application-section {
-  margin-bottom: 2rem; }
+  margin-bottom: 7rem; }
   .application-section .application-title {
     font-size: 3rem;
     font-weight: bold;
@@ -508,6 +508,22 @@ textarea {
       width: auto;
       object-fit: contain;
       margin-right: 1rem; }
+
+.application-header {
+  display: flex;
+  align-items: center; }
+
+.application-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-bottom: 1rem; }
+
+.application-section--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
 
 @media only screen and (max-width: 37.5em) {
   .application-section .application-screenshots .screenshot {
@@ -557,12 +573,14 @@ textarea {
   cursor: pointer; }
 
 .application-icon {
-  height: 30px;
+  height: 90px;
   /* adjust as necessary */
-  width: 30px;
+  width: 90px;
   /* adjust as necessary */
-  margin-right: 10px;
-  align-content: center;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  /* adjust as necessary */
+  vertical-align: middle;
   /* this aligns the icon with the title text */ }
 
 .header {

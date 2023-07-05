@@ -126,7 +126,7 @@
 }
 
 .application-section {
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 
   .application-title {
     font-size: 3rem;
@@ -148,6 +148,26 @@
   }
 }
 
+.application-header {
+  display: flex;
+  align-items: center;
+}
+
+.application-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.application-section--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
 @include respond(phone) {
   .application-section {
     .application-screenshots {
@@ -157,6 +177,7 @@
     }
   }
 }
+
 
 .screenshot {
   transition: transform 0.3s ease-in-out;
@@ -208,12 +229,13 @@
 }
 
 .application-icon {
-  height: 30px;
+  height: 90px;
   /* adjust as necessary */
-  width: 30px;
+  width: 90px;
   /* adjust as necessary */
-  margin-right: 10px;
-
-  align-content: center;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  /* adjust as necessary */
+  vertical-align: middle;
   /* this aligns the icon with the title text */
 }
