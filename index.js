@@ -36,3 +36,42 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the images and insert it inside the modal - use 'screenshot' instead of 'screenshot-img'
+var img = document.querySelectorAll('.screenshot');
+var modalImg = document.getElementById("img01");
+
+img.forEach(function(image) {
+  image.addEventListener('click', function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+document.onkeydown = function(evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+      modal.style.display = "none";
+  }
+};
+
+// When the user clicks anywhere outside of the image, close the modal
+modal.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
