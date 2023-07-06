@@ -123,6 +123,37 @@
       }
     }
   }
+
+  &__video {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    &-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+
+      @include respond(phone) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* Ratio d'aspect 16:9 pour la vidéo */
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .application-section {
