@@ -481,7 +481,8 @@ textarea {
 .project-details__links {
   margin: 0 0; }
   .project-details__links-btn {
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .project-details__links-btn {
         margin-right: 0;
